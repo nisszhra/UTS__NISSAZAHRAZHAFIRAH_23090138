@@ -1,7 +1,9 @@
 jumlah_barang = int(input('Masukan Jumlah Barang : '))
-harga_barang1 = int(input('Masukan Harga Barang Pertama : '))
-harga_barang2 = int(input('Masukan Harga Barang Kedua : '))
 
-total_belanja = harga_barang1 + harga_barang2
+total = 0
 
-print(f'Total Belanja : Rp {total_belanja:,.2f}')
+for i in range(jumlah_barang):
+    harga_barang = int(input('Masukan Harga : '))
+    total += harga_barang
+
+print(f'Total Belanja : Rp {total:,.2f}')
